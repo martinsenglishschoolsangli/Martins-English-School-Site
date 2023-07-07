@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Martins English School</title>
+	<meta charset="utf-8">
+	<meta name="Viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="javascript/js.js="></script>
+        <style>
+            h2,h3{
+                text-align: center;
+            }
+            button {
+            background-color: palegreen;
+            border: none;
+            padding: 10px;
+            margin: 0;
+            border-radius: 10px;
+            text-align: center;
+            }
+
+            a {
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+            }
+
+            a:hover {
+            text-decoration: underline;
+            }
+
+            .glowing-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.glowing-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+.glowing-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px;
+  background-color: transparent;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.glowing-button:hover:before {
+  opacity: 1;
+  transform: scale(1.2);
+}
+        </style>
+        
+        
+    </head>
+	<body class="body">
+		<header class="mainheader">
+			<div class="logo" style="margin-top: 30px; border-top-right-radius: 10px;border-top-left-radius: 10px;margin-right: -12%;">
+				<img src="images/Martin's English School, Sangli.jpg" style="width: 89.2% ;height:250px; margin-left: 0%;margin-bottom: -1%;border-bottom-left-radius: 0%;border-bottom-right-radius: 0% ">
+				</div>
+	
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="facility.html">Facility</a></li>
+					<li><a href="Mfacility.html">सुविधा</a></li>
+					<li><a href="Campus.html">Campus</a></li>
+					<li><a href="contact.html">Contact</a></li>	
+					<li><a href="Feedback.html">Feedback</a></li>	
+				</ul> 
+			</nav>
+		</header>
+		<br>
+
+        <h3> <u> STUDENT FEEDBACK <br>FORM </u></h3>
+        <h3> You can type your feedback here! <br> The Best feedbacks will be <br>reviewed and posted.</h3><br><br>
+        <div style="text-align: center;">
+            <button class="glowing-button"><a style="color:black ; font-size: 16px;" href="https://forms.gle/w1ZyNcaRq3QZ4X8T7" target="_blank"><b><i>Feedback Link (click here)</i></b></a></button>
+		</div>
+        <br><br>
+        <footer class="mainFooter">
+            <p>Copyright &copy Martins English School </a> </p>
+        </footer>
+    </body>  
+</html>
