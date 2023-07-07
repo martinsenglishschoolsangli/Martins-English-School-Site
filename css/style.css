@@ -107,8 +107,9 @@ h2{
  color: #CF5C3F;
  }
  a:hover, a:active{
- background-color: #CF5C3F;
+ background-color: lightsalmon;
  color:#fff;
+ border-radius: 10px;
  }
  
  .body{
@@ -374,6 +375,51 @@ h2{
    border-top-left-radius: 8px;
  }
  
+ .glowing-button button{
+  background-color: palegreen;
+  border: none;
+  padding: 10px;
+  margin: 0;
+  border-radius: 10px;
+  text-align: center;
+  }
+
+  .glowing-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  }
+
+  
+  .glowing-button a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    z-index: 1;
+    position: relative;
+    content: "";
+  }
+  
+  .glowing-button:before {
+    top: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    border-radius: 4px;
+    bottom: 0;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.6);
+    background-color: transparent;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 0;     
+    }
+
+  .glowing-button:hover:before {
+  opacity: 1;
+  transform: scale(1.2);
+  }
+
  @media only screen and (max-width: 768px) 
  {
  
