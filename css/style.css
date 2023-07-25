@@ -332,6 +332,21 @@ h2{
    /* .text {
      font-size: 10px
    } */
+
+    .mainheader nav a:hover, .mainheader nav a:active,
+   .mainheader nav .active a:link, .mainHeader nav .active a:visited
+   {
+    background-color:rgb(0,0,60);
+    text-shadow: none;
+   }
+
+   .mainheader nav a:link, .mainheader nav a:visited{    
+    padding: 10px 220px;
+    height: 20px;
+    margin-left: -50%;
+    }
+
+  
    .mainFooter p{
      width: 92%;
      margin: 10px auto;
